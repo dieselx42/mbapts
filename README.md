@@ -85,6 +85,7 @@ Data source selection:
 Vercel production recommendation:
 
 - Dashboard loader calls `/api/leads?source=fub`, so production requires a valid `FUB_API_KEY`.
+- On Vercel, CSV mode is disabled and the API is forced to Follow Up Boss.
 - Set these Vercel environment variables:
   - `FUB_API_KEY`
   - `FUB_BASE_URL=https://api.followupboss.com/v1`

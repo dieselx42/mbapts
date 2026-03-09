@@ -203,16 +203,43 @@ async function loadFromCsv() {
 export async function GET(request: NextRequest) {
   const sourceParam = new URL(request.url).searchParams.get("source")?.toLowerCase();
   const configuredSource = (process.env.LEADS_SOURCE || "").trim().toLowerCase();
+  const isVercel = Boolean(process.env.VERCEL);
   const hasFubKey = Boolean(process.env.FUB_API_KEY?.trim());
-  const sourcePreference = sourceParam || configuredSource || (hasFubKey ? "fub" : "csv");
+  const sourcePreference = sourceParam || configuredSource || (isVercel || hasFubKey ? "fub" : "csv");
 
   try {
     if (sourcePreference === "fub") {
+      if (!hasFubKey) {
+        return NextResponse.json(
+          {
+            ok: false,
+            source: "fub",
+            refreshedAt: new Date().toISOString(),
+            count: 0,
+            leads: [],
+            error: "Missing FUB_API_KEY in environment"
+          },
+          { status: 500 }
+        );
+      }
       const payload = await loadFromFubApi();
       return NextResponse.json(payload);
     }
 
     if (sourcePreference === "csv") {
+      if (isVercel) {
+        return NextResponse.json(
+          {
+            ok: false,
+            source: "csv",
+            refreshedAt: new Date().toISOString(),
+            count: 0,
+            leads: [],
+            error: "CSV source is disabled on Vercel. Use FUB_API_KEY and LEADS_SOURCE=fub."
+          },
+          { status: 500 }
+        );
+      }
       const payload = await loadFromCsv();
       return NextResponse.json(payload);
     }
