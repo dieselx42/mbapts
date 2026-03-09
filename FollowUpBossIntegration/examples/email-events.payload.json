@@ -1,0 +1,28 @@
+{
+  "campaign": {
+    "originId": "nc-2026-03-05",
+    "type": "new_construction",
+    "name": "New Construction Spotlight - March 5, 2026",
+    "subject": "New Miami Developments You Should See This Week",
+    "bodyHtml": "<h1>Inside Miami's Most Anticipated New Tower</h1>",
+    "sentAt": "2026-03-05T16:00:00Z"
+  },
+  "events": [
+    {
+      "type": "delivered",
+      "recipient": "buyer1@example.com",
+      "occurredAt": "2026-03-05T16:00:25Z"
+    },
+    {
+      "type": "open",
+      "recipient": "buyer1@example.com",
+      "occurredAt": "2026-03-05T16:10:00Z"
+    },
+    {
+      "type": "click",
+      "recipient": "buyer1@example.com",
+      "url": "https://miamibeachapartments.com/new-developments",
+      "occurredAt": "2026-03-05T16:11:10Z"
+    }
+  ]
+}

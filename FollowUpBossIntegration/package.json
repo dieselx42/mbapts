@@ -1,0 +1,15 @@
+{
+  "name": "followupboss-newsletter-integration",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Custom Follow Up Boss API bridge for newsletter campaigns and engagement events.",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "check": "node --check src/index.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

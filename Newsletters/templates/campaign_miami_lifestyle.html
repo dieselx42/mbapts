@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miami This Month: Culture, Events and Luxury Living</title>
+  <style>
+    body { margin:0; padding:0; background:#f5f7f8; font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; color:#383838; }
+    .main { width:100%; max-width:640px; margin:24px auto; background:#fff; border:1px solid #e3e3e3; }
+    .header { background:#383838; text-align:center; padding:24px; }
+    .logo { max-width:220px; height:auto; }
+    .hero { width:100%; display:block; }
+    .content { padding:28px 30px; }
+    h1 { margin:0 0 12px; font-size:30px; font-weight:300; line-height:1.2; }
+    h2 { margin:24px 0 8px; font-size:20px; font-weight:400; }
+    p { margin:0 0 12px; font-size:16px; line-height:1.6; }
+    .event { border-left:3px solid #2baadf; padding-left:12px; margin-bottom:14px; }
+    .cta { display:inline-block; padding:12px 22px; background:#2baadf; color:#fff; text-decoration:none; text-transform:uppercase; font-size:14px; letter-spacing:.4px; border-radius:2px; }
+    .footer { background:#383838; color:#c4c4c4; text-align:center; padding:22px 30px; font-size:12px; line-height:1.5; }
+    .footer a { color:#fff; }
+    @media screen and (max-width:640px) {
+      .content { padding:22px 18px; }
+      h1 { font-size:25px; }
+    }
+  </style>
+</head>
+<body>
+  <table role="presentation" width="100%">
+    <tr>
+      <td>
+        <table class="main" role="presentation" width="100%">
+          <tr><td class="header"><img class="logo" src="{{LOGO_URL}}" alt="Miami Beach Apartments"></td></tr>
+          <tr><td><img class="hero" src="{{HERO_IMAGE_URL}}" alt="Miami lifestyle"></td></tr>
+          <tr>
+            <td class="content">
+              <h1>Miami This Month: Culture, Events and Luxury Living</h1>
+              <p>Why buyers and investors continue to choose Miami for both lifestyle and asset performance.</p>
+
+              <h2>What Is Happening in Miami</h2>
+              <div class="event">
+                <p><strong>{{EVENT_1_NAME}}</strong></p>
+                <p>{{EVENT_1_DETAIL}}</p>
+              </div>
+              <div class="event">
+                <p><strong>{{EVENT_2_NAME}}</strong></p>
+                <p>{{EVENT_2_DETAIL}}</p>
+              </div>
+              <div class="event">
+                <p><strong>{{EVENT_3_NAME}}</strong></p>
+                <p>{{EVENT_3_DETAIL}}</p>
+              </div>
+
+              <h2>Real Estate Connection</h2>
+              <p>{{REAL_ESTATE_CONNECTION}}</p>
+
+              <p style="text-align:center;margin-top:20px;">
+                <a class="cta" href="{{CTA_URL}}">Explore Miami Opportunities</a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="footer">
+              <p style="margin:0 0 8px;color:#fff;">Natalia Gallego | Broker Associate</p>
+              <p style="margin:0 0 8px;">Berkshire Hathaway HomeServices EWM Realty</p>
+              <p style="margin:0 0 8px;">{{PHONE}} | {{EMAIL}}</p>
+              <p style="margin:0 0 8px;"><a href="{{WEBSITE_URL}}">miamibeachapartments.com</a> | <a href="{{UNSUBSCRIBE_URL}}">Unsubscribe</a></p>
+              <p style="margin:0;">Equal Housing Opportunity. Information deemed reliable but not guaranteed.</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

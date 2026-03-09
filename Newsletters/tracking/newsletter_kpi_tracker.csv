@@ -1,0 +1,14 @@
+send_date,campaign_type,segment,subject_line,emails_sent,open_rate,click_rate,reply_count,consultation_bookings,unsubscribe_rate,new_tags_applied,notes
+2026-03-05,new_construction_spotlight,active_buyers,"New Miami Developments You Should See This Week",0,0,0,0,0,0,0,
+2026-03-12,weekly_miami_brief,all_segments,"Miami Weekly Brief: What Buyers Are Watching Right Now",0,0,0,0,0,0,0,
+2026-03-19,new_construction_spotlight,investors,"Preconstruction Opportunities Before Public Release",0,0,0,0,0,0,0,
+2026-03-26,market_intelligence,long_term_nurture,"Miami Market Update - March 2026",0,0,0,0,0,0,0,
+2026-04-02,new_construction_spotlight,active_buyers,"Early Access: Miami's Most Anticipated Projects",0,0,0,0,0,0,0,
+2026-04-09,weekly_miami_brief,all_segments,"Miami Weekly Brief: New Signals for Luxury Buyers",0,0,0,0,0,0,0,
+2026-04-16,new_construction_spotlight,investors,"Why Smart Investors Are Buying Preconstruction Now",0,0,0,0,0,0,0,
+2026-04-23,miami_lifestyle_events,long_term_nurture,"Miami This Month: Culture, Events and Luxury Living",0,0,0,0,0,0,0,
+2026-04-30,investor_brief,investors_only,"Investor Brief - Private Distribution",0,0,0,0,0,0,0,optional quarterly send
+2026-05-07,new_construction_spotlight,active_buyers,"Inside Miami's Most Anticipated New Tower",0,0,0,0,0,0,0,
+2026-05-14,weekly_miami_brief,all_segments,"Miami Weekly Brief: Lifestyle Trends and Demand Shifts",0,0,0,0,0,0,0,
+2026-05-21,new_construction_spotlight,investors,"Preconstruction Opportunities Before Public Release",0,0,0,0,0,0,0,
+2026-05-28,market_intelligence,investors,"Are Prices Rising or Cooling? Miami Snapshot - May 2026",0,0,0,0,0,0,0,
