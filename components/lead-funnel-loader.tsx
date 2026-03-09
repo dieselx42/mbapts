@@ -39,7 +39,7 @@ export function LeadFunnelLoader() {
     }
 
     try {
-      const requestUrl = `/api/leads?refresh=${Date.now()}`;
+      const requestUrl = `/api/leads?source=fub&refresh=${Date.now()}`;
       const result = await fetch(requestUrl, { cache: "no-store" });
       const payload = (await result.json()) as ApiResponse;
       if (!mountedRef.current) return;
@@ -77,7 +77,7 @@ export function LeadFunnelLoader() {
   if (loading) {
     return (
       <div className="rounded-xl border border-slate-200 bg-white p-6 text-sm text-slate-600 shadow-sm">
-        Loading lead data from local CSV...
+        Loading lead data from Follow Up Boss...
       </div>
     );
   }

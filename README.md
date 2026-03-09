@@ -82,6 +82,17 @@ Data source selection:
 - `LEADS_SOURCE=csv` -> Pull from local CSV fallback chain.
 - You can override per request with `/api/leads?source=fub` or `/api/leads?source=csv`.
 
+Vercel production recommendation:
+
+- Dashboard loader calls `/api/leads?source=fub`, so production requires a valid `FUB_API_KEY`.
+- Set these Vercel environment variables:
+  - `FUB_API_KEY`
+  - `FUB_BASE_URL=https://api.followupboss.com/v1`
+  - `FUB_SYSTEM_NAME=lead-funnel-dashboard`
+- Optional tuning:
+  - `LEADS_FUB_PAGE_SIZE=100`
+  - `LEADS_FUB_MAX_PAGES=20`
+
 `GET /api/fub/ping`
 
 Server-side Follow Up Boss connectivity check.
